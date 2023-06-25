@@ -12,11 +12,13 @@ main {
 aside {
     width: 150px;
     border: 1px dashed orangered;
+    flex-shrink: 0;
 }
 .ms_main-container {
     flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
     display: flex;
     flex-direction: row;
+    overflow: auto;
 }
 .ms_header {
     flex-shrink: 0; /* per evitare che l'header venga schiacciato dal main */
