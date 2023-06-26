@@ -9,10 +9,19 @@ body {
 main {
     border: 1px dashed black;
 }
-aside {
-    width: 150px;
-    border: 1px dashed orangered;
+.sidebar {
+    width: 60px;
+    background-color: #051E34;
+    background-image: url("../images/sidebar-bg.png");
+    background-size: cover;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-hover:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .ms_main-container {
     flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
@@ -25,14 +34,23 @@ aside {
 }
 .ms_main-content {
     flex-grow: 1; /* va ad occupare tutto lo spazio disponibile */
-    border: 1px dashed blue;
 }
-.ms_content-up {
-    border: 1px dashed green;
-    min-height: 100px;
+.text-small {
+    font-size: small;
 }
-.ms_content-container {
-    border: 1px solid red;
+#student {
+    padding-top: 4.2px;
+}
+.btn-hover:hover {
+    color: #0D6EFD;
+}
+.ms_bg-pills {
+    color: #fff;
+    background-color: #165BBA;
+}
+#plus-pill {
+    width: 23px;
+    height: 23px;
 }
 /* classi momentanee */
 .ms_height {
@@ -40,4 +58,23 @@ aside {
 }
 .ms_height-2 {
     min-height: 100px;
+}
+
+/* media queries aggiuntive */
+@media screen and (min-width: 768px) {
+    .sidebar {
+        width: 150px;
+    }
+    .sidebar .nav-link i {
+        margin-right: 0.5rem;
+    }
+    #chart {
+        margin-left: -7px;
+    }
+    #signal {
+        margin-left: 4px;
+    }
+    #home {
+        margin-left: -1.5px;
+    }
 }
