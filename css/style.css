@@ -29,8 +29,15 @@ aside {
 }
 .ms_content-up {
     border: 1px dashed green;
-    height: 100px;
+    min-height: 100px;
 }
 .ms_content-container {
     border: 1px solid red;
+}
+/* classi momentanee */
+.ms_height {
+    min-height: 200px;
+}
+.ms_height-2 {
+    min-height: 100px;
 }
