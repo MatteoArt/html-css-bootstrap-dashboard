@@ -36,6 +36,20 @@ body {
 .text-small {
     font-size: small;
 }
+.text-table {
+    font-size: 14px;
+}
+.avatar-img {
+    width: 20px;
+}
+.ms_tb-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 25%;
+}
 #student {
     padding-top: 4.2px;
 }
@@ -77,5 +91,8 @@ body {
     }
     #home {
         margin-left: -1.5px;
+    }
+    .ms_table-col-lg {
+        width: 50%;
     }
 }
