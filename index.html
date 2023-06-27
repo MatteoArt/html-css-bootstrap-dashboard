@@ -58,9 +58,10 @@
         </a>
         <form class="d-flex flex-grow-1" role="search">
           <div class="input-group flex-nowrap">
-            <span class="input-group-text bg-light border-0" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input class="form-control me-0 pe-0 ps-0 border-0 bg-light" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
-              aria-label="Search" aria-describedby="addon-wrapping">
+            <span class="input-group-text bg-light border-0" id="addon-wrapping"><i
+                class="fa-solid fa-magnifying-glass"></i></span>
+            <input class="form-control me-0 pe-0 ps-0 border-0 bg-light" type="search"
+              placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
           </div>
         </form>
         <div class="ms_icon-container flex-shrink-0">
@@ -115,8 +116,36 @@
             <div class="col-12 col-sm-4 col-md-3 order-sm-3">
               <div id="student" class="d-flex flex-row gap-4 align-items-center">
                 <span class="text-small fw-semibold text-light">Nuovo Studente</span>
-                <button type="button" class="btn btn-outline-light btn-hover" style="padding-bottom: 8px;"><i
+                <button type="button" class="btn btn-outline-light btn-hover" style="padding-bottom: 8px;"
+                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                     class="fa-solid fa-plus"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="inputName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputName">
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname">
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <div class="input-group flex-nowrap">
+                          <span class="input-group-text" id="addon-wrapping">@</span>
+                          <input type="email" class="form-control" id="inputEmail" aria-describedby="addon-wrapping">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-12 col-sm-4 col-md-6 order-sm-1">
