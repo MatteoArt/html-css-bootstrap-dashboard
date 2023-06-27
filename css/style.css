@@ -70,12 +70,18 @@ body {
 .ms_table-col-lg {
     width: 40%;
 }
-/* classi momentanee */
-.ms_height {
-    min-height: 200px;
+.ms_pointer {
+    cursor: pointer;
 }
-.ms_height-2 {
-    min-height: 100px;
+.ms_icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-left: 1.5rem;
+}
+#bell {
+    color: #FF8F00;
 }
 
 /* media queries aggiuntive */

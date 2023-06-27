@@ -18,7 +18,7 @@
   <header class="ms_header py-md-3">
     <nav class="navbar bg-white p-0">
       <div class="container-fluid">
-        <a class="navbar-brand">
+        <a class="navbar-brand me-4">
           <img class="ms_nav-logo d-md-none" src="images/mobile-logo.png" alt="logo mobile">
           <svg class="d-none d-md-inline-block" width="133" height="28" viewBox="0 0 133 28" fill="none"
             xmlns="http://www.w3.org/2000/svg" class="navbar-content-logo-desktop">
@@ -57,11 +57,28 @@
           </svg>
         </a>
         <form class="d-flex flex-grow-1" role="search">
-          <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
-            aria-label="Search">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text bg-light border-0" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input class="form-control me-0 pe-0 ps-0 border-0 bg-light" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+              aria-label="Search" aria-describedby="addon-wrapping">
+          </div>
         </form>
-        <div class="">
-          Icona
+        <div class="ms_icon-container flex-shrink-0">
+          <a href="#" class="d-none d-md-inline-block text-secondary"><i class="fa-solid fa-list"></i></a>
+          <a href="#" class="d-none d-md-inline-block text-secondary"><i class="fa-solid fa-circle-question"></i></a>
+          <a href="#" class="d-none d-md-inline-block text-secondary"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          <!-- dropdown menu -->
+          <div class="dropdown">
+            <a id="bell" class="d-inline-block" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -125,11 +142,11 @@
 
         <!-- container delle varie tab del layout-->
         <div class="container-fluid">
-          <div class="row">
+          <div class="row gy-4">
             <!-- tab prossime classi e F.A.Q. -->
             <div class="col-12 col-md-8 d-flex flex-column">
               <!--prossime classi -->
-              <div class="card">
+              <div class="card mb-3">
                 <div class="card-header">
                   <h3>Prossime classi</h3>
                 </div>
@@ -156,8 +173,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -171,8 +190,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -186,8 +207,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-warning text-white">process</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -201,8 +224,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -216,8 +241,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-danger">failed</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -231,8 +258,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -246,8 +275,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-danger">failed</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                       <tr>
@@ -261,8 +292,10 @@
                         <td class="fw-semibold text-table d-none d-sm-table-cell">20%</td>
                         <td><span class="badge text-bg-success">Done</span></td>
                         <td>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-pencil fa-sm"></i></button>
-                          <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-trash fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-pencil fa-sm"></i></button>
+                          <button type="button" class="btn btn-outline-secondary btn-sm"><i
+                              class="fa-solid fa-trash fa-sm"></i></button>
                         </td>
                       </tr>
                     </tbody>
@@ -275,7 +308,45 @@
                   <h4>F.A.Q.</h4>
                 </div>
                 <div class="card-body">
-
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Come aggiungere un nuovo studente?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Come posso accedere alle informazioni del mio account?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          Posso usare questa dashboard da mobile?
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Si, la dashboard è ottimizzata per visualizzazione da mobile.</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -283,30 +354,42 @@
             <!-- tab todo e grafico -->
             <div class="col-12 col-md-4 d-flex flex-column">
               <!-- todo -->
-              <div class="card">
+              <div class="card mb-3">
                 <div class="card-header">
                   <h4>Todo</h4>
                 </div>
                 <div class="card-body">
                   <ul class="list-group fw-semibold">
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="classi">
+                      <input class="form-check-input me-1 ms_pointer" type="checkbox" value="" id="classi">
                       <label class="form-check-label" for="classi">Kickoff nuove classi</label>
                     </li>
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="lezione">
+                      <input class="form-check-input me-1 ms_pointer" type="checkbox" value="" id="lezione">
                       <label class="form-check-label" for="lezione">Lezione su Bootstrap 5 in classe #75</label>
                     </li>
                     <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" id="username">
+                      <input class="form-check-input me-1 ms_pointer" type="checkbox" value="" id="username">
                       <label class="form-check-label" for="username">Controllare username github studenti</label>
                     </li>
                   </ul>
                 </div>
               </div>
               <!--grafico -->
-              <div class="card ms_height">
-                Grafico
+              <div class="card p-3">
+                <div class="card-body p-0 border rounded-2">
+                  <img class="card-img-top" src="images/stats.jpeg" alt="stats">
+                  <h5 class="card-title ps-3 mt-3">Utenti attivi</h5>
+                  <p class="card-text text-small ps-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                  <ul class="list-group list-group-flush mb-2">
+                    <li class="list-group-item border-top">Gennaio: 1200</li>
+                    <li class="list-group-item">Febbraio: 800</li>
+                    <li class="list-group-item">Marzo: 1500</li>
+                    <li class="list-group-item">
+                      <a href="#">Visualizza report approfondito</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
