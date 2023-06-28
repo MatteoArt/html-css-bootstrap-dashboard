@@ -128,20 +128,59 @@
                   </div>
                   <div class="offcanvas-body">
                     <form class="row g-3">
-                      <div class="col-sm-6">
+                      <div class="col-12 col-sm-6">
                         <label for="inputName" class="form-label">Nome</label>
                         <input type="text" class="form-control" id="inputName">
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-12 col-sm-6">
                         <label for="surname" class="form-label">Cognome</label>
                         <input type="text" class="form-control" id="surname">
                       </div>
-                      <div class="col-sm-6">
+                      <div class="col-12 col-sm-6">
                         <label for="inputEmail" class="form-label">Email</label>
                         <div class="input-group flex-nowrap">
                           <span class="input-group-text" id="addon-wrapping">@</span>
                           <input type="email" class="form-control" id="inputEmail" aria-describedby="addon-wrapping">
                         </div>
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                      </div>
+                      <div class="col-12">
+                        <label for="indirizzo" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="indirizzo">
+                      </div>
+                      <div class="col-12 col-sm-6">
+                        <label for="inputCity" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-12 col-sm-4">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>Milano etc...</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-sm-2">
+                        <label for="cap" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="cap">
+                      </div>
+                      <div class="col-12">
+                        <label for="foto" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="foto">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary fw-semibold ms_btn-form-padding">Salva</button>
+                        <button type="button" class="btn btn-warning fw-semibold ms_btn-form-padding">Svuota</button>
                       </div>
                     </form>
                   </div>
@@ -191,7 +230,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="ms_bg-tr ms_bg-white">
                         <td class="fw-semibold text-table position-relative">
                           <div class="ms_tb-container">
                             <img class="avatar-img" src="images/class-avatar.jpg" alt="avatar">
